@@ -13,11 +13,11 @@ npm install --save class-repeat
 ```javascript
 var classRepeat = require('class-repeat')
 
-classRepeat('.foo.bar') => '.foo.foo.bar.bar'
-classRepeat('.foo:before') => '.foo:before.foo:before'
-classRepeat('.foo .bar.baz') => '.foo.foo .bar.bar.baz.baz'
-classRepeat('input.foo-bar.baz > .pizazz') => 'input.foo-bar.foo-bar.baz.baz > .pizazz.pizazz'
-classRepeat('.foo', { repeat: 4 }) => '.foo.foo.foo.foo'
+classRepeat('.foo.bar') // => '.foo.foo.bar.bar'
+classRepeat('.foo:before') // => '.foo:before.foo:before'
+classRepeat('.foo .bar.baz') // => '.foo.foo .bar.bar.baz.baz'
+classRepeat('input.foo-bar.baz > .pizazz') // => 'input.foo-bar.foo-bar.baz.baz > .pizazz.pizazz'
+classRepeat('.foo', { repeat: 4 }) // => '.foo.foo.foo.foo'
 ```
 
 ## License
