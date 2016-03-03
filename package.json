@@ -1,6 +1,6 @@
 {
   "name": "class-repeat",
-  "description": "Repeat class selectors in a string",
+  "description": "Repeat class selectors",
   "author": "John Otander",
   "version": "0.1.0",
   "main": "index.js",
@@ -11,7 +11,12 @@
     "test": "ava"
   },
   "repository": "johnotander/class-repeat",
-  "keywords": [],
+  "keywords": [
+    "css",
+    "selector",
+    "class",
+    "repeat"
+  ],
   "license": "MIT",
   "dependencies": {
     "get-css-classes": "^1.1.0",
