@@ -19,6 +19,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "css-selector-tokenizer": "^0.5.4",
     "get-css-classes": "^1.1.0",
     "has-class-selector": "^1.0.0",
     "is-present": "^1.0.0"
