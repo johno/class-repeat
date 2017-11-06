@@ -19,11 +19,6 @@ module.exports = function classRepeat (selector, options) {
       if (node.type === 'class') {
         for (var i = 0; i < options.repeat; i++) {
           tokensWithRepeatedClasses.push(node)
-
-          var nextToken = tokens.nodes[index + 1]
-          if (isPresent(nextToken) && isPseudo(nextToken) && i + 1 !== options.repeat) {
-            tokensWithRepeatedClasses.push(nextToken)
-          }
         }
       } else {
         tokensWithRepeatedClasses.push(node)
@@ -40,8 +35,4 @@ module.exports = function classRepeat (selector, options) {
   } else {
     return selector
   }
-}
-
-function isPseudo(token) {
-  return token && (token.type === 'pseudo-element' || token.type === 'pseudo-class')
 }
