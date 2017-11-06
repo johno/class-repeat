@@ -19,8 +19,6 @@ module.exports = function classRepeat (selector, options) {
       if (node.type === 'class' || isPseudo(node)) {
         for (var i = 0; i < options.repeat; i++) {
           tokensWithRepeatedClasses.push(node)
-
-          var nextToken = tokens.nodes[index + 1]
         }
       } else {
         tokensWithRepeatedClasses.push(node)
