@@ -16,7 +16,7 @@ module.exports = function classRepeat (selector, options) {
     var tokens = SelectorTokenizer.parse(selector).nodes[0] || { nodes: [] }
     var tokensWithRepeatedClasses = []
     tokens.nodes.map(function (node, index) {
-      if (node.type === 'class' || isPseudo(node)) {
+      if (node.type === 'class') {
         for (var i = 0; i < options.repeat; i++) {
           tokensWithRepeatedClasses.push(node)
         }
@@ -35,8 +35,4 @@ module.exports = function classRepeat (selector, options) {
   } else {
     return selector
   }
-}
-
-function isPseudo(token) {
-  return token && (token.type === 'pseudo-element' || token.type === 'pseudo-class')
 }
